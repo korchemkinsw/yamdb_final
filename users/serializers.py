@@ -73,4 +73,4 @@ class TokenSerializer(serializers.Serializer):
             )
             if response_code != value:
                 raise ValidationError('The confirmation code is not correct')
-            return value
+        return value
