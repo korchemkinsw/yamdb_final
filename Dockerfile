@@ -3,4 +3,5 @@ RUN mkdir /code
 COPY requirements.txt /code
 RUN pip3 install -r /code/requirements.txt
 COPY . /code
-cmd python /code/manage.py runserver 0:8000
+WORKDIR /code
+CMD gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
