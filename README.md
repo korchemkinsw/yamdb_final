@@ -1,3 +1,5 @@
+![example workflow](https://github.com/korchemkinsw/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 # api_yamdb
 
 ## Краткое описание
