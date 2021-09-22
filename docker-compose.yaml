@@ -1,6 +1,8 @@
 version: '3.7'
 volumes:
   postgres_data:
+  static_value:
+  media_value:
 services:
   db:
     image: postgres:latest
@@ -9,7 +11,6 @@ services:
     env_file:
       - ./.env
   web:
-    # build: .
     image: korchemkinsw/yamdb_final:latest
     restart: always
     volumes:
@@ -32,8 +33,3 @@ services:
 
     depends_on:
       - web
-
-volumes:
-  postgres_data:
-  static_value:
-  media_value:
