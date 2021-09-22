@@ -9,7 +9,7 @@ environ.Env.read_env()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('DJ_KEY')
+SECRET_KEY = os.environ['DJ_KEY']
 
 DEBUG = False
 
