@@ -61,7 +61,7 @@ jobs:
           sudo docker pull korchemkinsw/yamdb_final
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q) 
-          sudo docker run --rm -d korchemkinsw/yamdb_final 
+          sudo docker run --rm -d korchemkinsw/yamdb_final --name yamdb_final_web_1
           sudo docker start $(sudo docker ps -a -q)
 
   send_message:
