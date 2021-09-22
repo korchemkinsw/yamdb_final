@@ -1,7 +1,8 @@
 name: yamdb_final
 
 on: push
-  types: [tests]
+  push:
+    types: [tests]
   push:
     branches: [master]
     types: [tests, build, deploy, send_message]
