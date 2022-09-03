@@ -1,6 +1,7 @@
 ![example workflow](https://github.com/korchemkinsw/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # api_yamdb
+(Яндекс Практикум)
 
 ## Краткое описание
 Данный учебный проект представляет собой реализацию API для доступа к базе данных, содержащей описание, отзывы и комментарии о различных произведениях.
